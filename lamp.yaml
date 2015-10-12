@@ -183,7 +183,7 @@ outputs:
 
   server_ip:
     description: Server IP
-    value: { get_attr: [linux_server, networks, private, 0] }
+    value: { get_attr: [linux_server, accessIPv4] }
 
   phpmyadmin_url:
     description: phpMyAdmin URL
